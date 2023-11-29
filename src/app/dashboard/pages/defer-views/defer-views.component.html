@@ -1,36 +1,47 @@
+<!-- FILEPATH: /C:/Users/IVA/Desktop/fh-angular/angular-my-dashboard-02/angular-my-dashboard/src/app/dashboard/pages/defer-views/defer-views.component.html -->
 
-<app-title title="Defer Views / Blocs" />
-
-
-<section class="grid grid-cols-1">
-
-
-  @defer () {
-    <app-heavy-loaders-slow cssClass="bg-blue-500" />
-  } @placeholder {
-    <p class="h-[600px] w-full bg-gradient-to-r from-gray-200 to-gray-400 animate-pulse">
-      Cargando...
-    </p>
-  }
-
-  @defer (on idle) {
-    <app-heavy-loaders-slow cssClass="bg-green-500" />
-  } @placeholder {
-    <p class="h-[600px] w-full bg-gradient-to-r from-gray-200 to-gray-400 animate-pulse">
-      Cargando...
-    </p>
-  }
-
-  @defer (on viewport) {
-    <app-heavy-loaders-slow cssClass="bg-purple-500" />
-  } @placeholder {
-    <p class="h-[600px] w-full bg-gradient-to-r from-gray-200 to-gray-400 animate-pulse">
-      Cargando...
-    </p>
-  }
-
-
-
-</section>
-
-
+<form>
+  <div>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+  </div>
+  <br>
+  <div>
+    <label for="direccion">Dirección:</label>
+    <input type="text" id="direccion" name="direccion" required>
+  </div>
+  <br>
+  <div>
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" name="telefono" required>
+  </div>
+  <br>
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+  <br>
+  <div>
+    <label for="producto">Producto:</label>
+    <select id="producto" name="producto" required>
+      <option value="">Seleccionar producto</option>
+      <option value="producto1">Producto 1</option>
+      <option value="producto2">Producto 2</option>
+      <option value="producto3">Producto 3</option>
+    </select>
+  </div>
+  <br>
+  <div>
+    <label for="cantidad">Cantidad:</label>
+    <input type="number" id="cantidad" name="cantidad" required>
+  </div>
+  <br>
+  <div>
+    <label for="precio">Precio:</label>
+    <input type="number" id="precio" name="precio" required>
+  </div>
+  <br>
+  <div>
+    <button type="submit">Generar factura</button>
+  </div>
+</form>

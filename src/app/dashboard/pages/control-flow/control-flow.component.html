@@ -27,10 +27,10 @@
     <h2 class="text-3xl">{{ grade() }}</h2>
 
     @switch ( grade() ) { @case ('A') {
-    <p>Arriba de 90</p>
+    <p>Arriba de 100</p>
 
     } @case ( 'B' ) {
-    <p>Arriba de 80</p>
+    <p>Arriba de 8</p>
     } @default {
     <p>Reprobado</p>
     } }
@@ -58,7 +58,7 @@
       @for (framework of frameworks2(); track framework; ) {
         <li>{{ framework }}</li>
       } @empty {
-        <li>No hay frameworks agregados</li>
+        <li>No hay frameworks0 agregados</li>
       }
     </ul>
   </div>
