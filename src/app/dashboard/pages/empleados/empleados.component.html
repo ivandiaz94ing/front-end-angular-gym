@@ -1,88 +1,115 @@
-<!-- FILEPATH: /c:/Users/IVA/Desktop/fh-angular/angular-my-dashboard-02/angular-my-dashboard/src/app/dashboard/pages/miembros/miembros.component.html -->
-
-<ul class="employees-list">
-  <li>
-    <div class="employees-info">
-      <span class="employees-name">Nombre  1</span>
-      <span class="employees-icon">Icono   1</span>
-      <span class="employees-details">Sexo: Masculino, Edad: 30</span>
-      <div class="employees-actions">
-        <button class="edit-button">Editar</button>
-        <button class="delete-button">Eliminar</button>
-        <button class="view-button">Ver</button>
-      </div>
-    </div>
-  </li>
-  <li>
-    <div class="employees-info">
-      <span class="employees-name">Nombre  2</span>
-      <span class="employees-icon">Icono   2</span>
-      <span class="employees-details">Sexo: Femenino, Edad: 25</span>
-      <div class="employees-actions">
-        <button class="edit-button">Editar</button>
-        <button class="delete-button">Eliminar</button>
-        <button class="view-button">Ver</button>
-      </div>
-    </div>
-  </li>
-  <li>
-    <div class="employees-info">
-      <span class="employees-name">Nombre  3</span>
-      <span class="employees-icon">Icono   3</span>
-      <span class="employees-details">Sexo: Masculino, Edad: 35</span>
-      <div class="employees-actions">
-        <button class="edit-button">Editar</button>
-        <button class="delete-button">Eliminar</button>
-        <button class="view-button">Ver</button>
-      </div>
-    </div>
-  </li>
-  <!-- Agrega más elementos de la lista según sea necesario -->
-</ul>
-
 
 <style>
-  .employees-list {
-    list-style-type: none;
-    padding: 0;
+  table {
+    width: 100%;
+    border-collapse: collapse;
   }
 
-  .employees-info {
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  tr:hover {
+    background-color: #f5f5f5;
+  }
+
+  .actions {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    margin-bottom: 10px;
   }
 
-  .employees-name {
-    font-weight: bold;
-  }
-
-  .employees-actions {
-    display: flex;
-    gap: 10px;
-  }
-
-  .edit-button,
-  .delete-button,
-  .view-button {
-    padding: 5px 10px;
+  .actions button {
+    margin-right: 5px;
+    background-color: #4CAF50;
+    color: white;
     border: none;
-    border-radius: 5px;
-    background-color: #ccc;
-    color: #fff;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
     cursor: pointer;
   }
 
-  .edit-button {
-    background-color: #007bff;
+  .actions button.editar {
+    background-color: #2196F3;
   }
 
-  .delete-button {
-    background-color: #dc3545;
+  .actions button.ver {
+    background-color: #135a45dc;
   }
 
-  .view-button {
-    background-color: #28a745;
+  .actions button.eliminar {
+    background-color: #F44336;
   }
 </style>
+
+<table>
+  <thead>
+    <tr>
+      <th>Codigo</th>
+      <th>Nombres</th>
+      <th>Apellidos</th>
+      <th>Email</th>
+      <th>Telefono</th>
+      <th>Direccion</th>
+      <th>Estado</th>
+      <th>Plan</th>
+      <th>Entrenador</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Jose</td>
+      <td>Mejia</td>
+      <td>j&copy;gmail.com</td>
+      <td>3226763246</td>
+      <td>Calle 7 # 4d</td>
+      <td>Activo</td>
+      <td>01</td>
+      <td>15</td>
+
+      <td class="actions">
+        <button class="ver">Ver</button>
+        <button class="editar">Editar</button>
+        <button class="eliminar">Eliminar</button>
+      </td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Smith</td>
+      <td>Ospino</td>
+      <td>s_&copy;gmail.com</td>
+      <td>3005784512</td>
+      <td>Mz 66 casa 8</td>
+      <td>activo</td>
+      <td>02</td>
+      <td>25</td>
+      <td class="actions">
+        <button class="ver">Ver</button>
+        <button class="editar">Editar</button>
+        <button class="eliminar">Eliminar</button>
+      </td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Johnson</td>
+      <td>Maestre</td>
+      <td>jh.&copy;gmail.com</td>
+      <td>3102784577</td>
+      <td>calle 12 N 13b</td>
+      <td>activo</td>
+      <td>03</td>
+      <td>35</td>
+      <td class="actions">
+        <button class="ver">Ver</button>
+        <button class="editar">Editar</button>
+        <button class="eliminar">Eliminar</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

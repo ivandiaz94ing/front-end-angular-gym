@@ -31,7 +31,7 @@ export class UsersService {
   constructor() {
 
     this.http.get<UsersResponse>('https://reqres.in/api/users')
-      .pipe( delay(1500) )
+      .pipe( delay(1000) )
       .subscribe( res => {
 
         this.#state.set({
@@ -46,7 +46,7 @@ export class UsersService {
   getUserById( id: string ) {
     return this.http.get<UserResponse>(`https://reqres.in/api/users/${ id }`)
       .pipe(
-        delay(1500),
+        delay(1000),
         map( resp => resp.data )
       )
 

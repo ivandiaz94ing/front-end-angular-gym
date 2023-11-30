@@ -8,11 +8,11 @@ export const routes: Routes = [
     children: [
 
 
-      {
-        path: 'empleados',
-        title: 'Gestion Empleados',
-        loadComponent: () => import('./dashboard/pages/empleados/empleados.component'),
-      },
+      // {
+      //   path: 'empleados',
+      //   title: 'Gestion Empleados',
+      //   loadComponent: () => import('./dashboard/pages/empleados/empleados.component'),
+      // },
 
       {
         path: 'miembros',
@@ -36,6 +36,17 @@ export const routes: Routes = [
         path: 'reportes',
         title: 'Reportes',
         loadComponent: () => import('./dashboard/pages/reportes/reportes.component'),
+      },
+
+      // {
+      //   path: 'listado-empleados',
+      //   title: 'Empleados',
+      //   loadComponent: () => import('./dashboard/pages/empleados/list-empleados/list-empleados.component'),
+      // },
+      {
+        path: 'empleados',
+        title: 'Empleados',
+        loadComponent: () => import('./dashboard/pages/users/users.component'),
       },
 
 
