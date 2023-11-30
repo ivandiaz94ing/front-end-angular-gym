@@ -1,0 +1,88 @@
+<!-- FILEPATH: /c:/Users/IVA/Desktop/fh-angular/angular-my-dashboard-02/angular-my-dashboard/src/app/dashboard/pages/miembros/miembros.component.html -->
+
+<ul class="trainer-list">
+  <li>
+    <div class="trainer-info">
+      <span class="trainer-name">Nombre Entrenador 1</span>
+      <span class="trainer-icon">Icono Entrenador 1</span>
+      <span class="trainer-details">Sexo: Masculino, Edad: 30</span>
+      <div class="trainer-actions">
+        <button class="edit-button">Editar</button>
+        <button class="delete-button">Eliminar</button>
+        <button class="view-button">Ver</button>
+      </div>
+    </div>
+  </li>
+  <li>
+    <div class="trainer-info">
+      <span class="trainer-name">Nombre Entrenador 2</span>
+      <span class="trainer-icon">Icono Entrenador 2</span>
+      <span class="trainer-details">Sexo: Femenino, Edad: 25</span>
+      <div class="trainer-actions">
+        <button class="edit-button">Editar</button>
+        <button class="delete-button">Eliminar</button>
+        <button class="view-button">Ver</button>
+      </div>
+    </div>
+  </li>
+  <li>
+    <div class="trainer-info">
+      <span class="trainer-name">Nombre Entrenador 3</span>
+      <span class="trainer-icon">Icono Entrenador 3</span>
+      <span class="trainer-details">Sexo: Masculino, Edad: 35</span>
+      <div class="trainer-actions">
+        <button class="edit-button">Editar</button>
+        <button class="delete-button">Eliminar</button>
+        <button class="view-button">Ver</button>
+      </div>
+    </div>
+  </li>
+  <!-- Agrega más elementos de la lista según sea necesario -->
+</ul>
+
+
+<style>
+  .trainer-list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .trainer-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .trainer-name {
+    font-weight: bold;
+  }
+
+  .trainer-actions {
+    display: flex;
+    gap: 10px;
+  }
+
+  .edit-button,
+  .delete-button,
+  .view-button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ccc;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .edit-button {
+    background-color: #007bff;
+  }
+
+  .delete-button {
+    background-color: #dc3545;
+  }
+
+  .view-button {
+    background-color: #28a745;
+  }
+</style>
